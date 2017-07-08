@@ -24,6 +24,7 @@ Output:  <br />
 .356396 <br />
 
 Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/ <br />
-![alt text] (https://raw.githubusercontent.com/jahneff/circle_splitter/master/bounding_circle.PNG
+
+
 
 
