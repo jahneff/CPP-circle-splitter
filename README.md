@@ -26,4 +26,4 @@ Output:  <br />
 Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/ <br />
 
 
-[[https://github.com/jahneff/circle_splitter/blob/master/bounding_circle.PNG]]
+https://github.com/jahneff/circle_splitter/blob/master/bounding_circle.PNG
