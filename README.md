@@ -1,4 +1,3 @@
-
 # circle_splitter
 From r/dailyprogrammer, a challenge to find the smallest circle around half the possible points.
 
@@ -23,7 +22,7 @@ Output:  <br />
 .5629 .76375 <br />
 .356396 <br />
 
-Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/ <br />
-
+Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/:<br />
+The red dots are the inputs and the green circle is given by the output. <br />
 
 https://github.com/jahneff/circle_splitter/blob/master/bounding_circle.PNG
