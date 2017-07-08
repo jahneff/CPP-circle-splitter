@@ -29,5 +29,5 @@ The red dots are the inputs and the green circle is given by the output. <br />
 
 https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
 <br />
-There are 6 dots on the inside and 6 dots outside the circle (the edge counts as inside). Also, it appears to be the smallest possible circle to be able to enclose 6 of the points.   
+There are 6 dots on the inside and 6 dots outside the circle (the edge counts as inside). It appears by inspection to be the smallest possible circle to be able to enclose 6 of the points.   
 
