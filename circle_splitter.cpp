@@ -7,17 +7,23 @@
 
 struct point{
 	double x;
-	double y;	
+	double y;
+	point();	
 };
+
 struct circle{
 	point center;
 	double radius;
 	circle();
 };
 
+point::point(){
+	x = 0;
+	y = 0;
+}
+ 
 circle::circle(){
-	center.x = 0;
-	center.y = 0;
+	center = point();
 	radius = 2;
 }
 
@@ -27,10 +33,19 @@ point find_midpoint(point point1, point point2){
 	mid.y = (.5 * (point1.y + point2.y)); 
 	return mid;	   
 }
+
 double find_radius(point point1, point point2){
 	double rad;
 	rad = sqrt(pow(point1.x - point2.x, 2) + pow(point1.y - point2.y, 2));
 	return rad;
+}
+
+bool circle_in_area(point midpoint, double radius){
+	if(midpoint.x + radius > 1) {return false;}
+	else if(midpoint.x - radius < 0) {return false;}
+	else if(midpoint.y + radius > 1) {return false;}
+	else if(midpoint.y - radius < 0) {return false;}
+	else {return true;}			
 }
 
 int main(){
@@ -55,29 +70,26 @@ int main(){
 	for(int j = 0; j < num_points; j++){
 		for(int k = 0; k < j; k++){
 			points_inside = 0;
-			std::cout << "circle for points:" << std::endl; 
-			std::cout << "x1: " << array[j].x  << ", y1: " << array[j].y << ", x2: " << array[k].x << ", y2: " << array[k].y  << std::endl;
 			midpoint = find_midpoint(array[j], array[k]);
 			radius = find_radius(array[j], array[k]) / 2;
-		std::cout << "midpoint: " << midpoint.x << ", " << midpoint.y << std::endl;
-			std::cout << "radius: " << radius << std::endl;
 			for(int l = 0; l < num_points; l++){
 				temp_radius = find_radius(midpoint, array[l]);
-				std::cout << "temp radius " << l << " " << temp_radius << std::endl;
-				if (temp_radius <= radius && (l != j || l != k)){
+				if (temp_radius <= radius){
 					points_inside++;
 				} 
 			}
-			std::cout << "points inside: " << points_inside << std::endl;	
-			if((points_inside == num_points/2) && (radius < final_circle.radius)){
+			if((points_inside == num_points/2) && (radius < final_circle.radius) && circle_in_area(midpoint, radius)){
 				final_circle.center.x = midpoint.x; 	
 				final_circle.center.y = midpoint.y;
  				final_circle.radius = radius;
 			}
 		}	
 	} 		
-			
-	std::cout << "The smallest circle with half the points is midpoint: " << final_circle.center.x << ", " << final_circle.center.y << std::endl;
-	std::cout << "Its radius: " << final_circle.radius << std::endl;
-
+	if(final_circle.radius == 2){
+		std::cout << "No solution could be found!" << std::endl;
+	}
+	else {		
+		std::cout << "The smallest circle with half the points is midpoint: " << final_circle.center.x << ", " << final_circle.center.y << std::endl;
+		std::cout << "Its radius: " << final_circle.radius << std::endl;
+	}
  }
