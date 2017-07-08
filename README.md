@@ -1,7 +1,7 @@
 # circle_splitter
 From r/dailyprogrammer, a challenge to find the smallest circle around half the possible points.
 
-Example run:
+**Example run:** <br />
 Input is a number n of points followed by 10 x-y coordinate pairs.
 Output is the midpoint and radius of the smallest circle to encompass exactly n/2 points
 
