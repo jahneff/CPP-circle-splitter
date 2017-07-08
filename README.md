@@ -1,4 +1,4 @@
-# circle_splitter
+img# circle_splitter
 From r/dailyprogrammer, a challenge to find the smallest circle around half the possible points.
 
 Input is a number n of points followed by 10 x-y coordinate pairs. <br />
@@ -24,4 +24,4 @@ Output:  <br />
 Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/:<br />
 The red dots are the inputs and the green circle is given by the output. <br />
 
-https://github.com/jahneff/circle_splitter/blob/master/bounding_circle.PNG
+https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
