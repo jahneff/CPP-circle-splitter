@@ -1,5 +1,5 @@
-img# circle_splitter
-From r/dailyprogrammer, a challenge to find the smallest circle around half the possible points.
+# circle_splitter
+: A challenge from r/dailyprogrammer, a challenge to find the smallest circle enclosing half given points.
 
 Input is a number n of points followed by 10 x-y coordinate pairs. <br />
 Output is the midpoint and radius of the smallest circle to encompass exactly n/2 points <br /> <br /> 
@@ -28,3 +28,6 @@ Is this correct? It appears to be. Here is an image generated at https://jsfiddl
 The red dots are the inputs and the green circle is given by the output. <br />
 
 https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
+<br />
+There are 6 dots on the inside and 6 dots outside the circle (the edge counts as inside). Also, it appears to be the smallest possible circle to be able to enclose 6 of the points.   
+
