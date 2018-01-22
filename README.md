@@ -24,7 +24,7 @@ Output:  <br />
 .1249 .37155 <br />
 .264474 <br />
 
-Is this correct? It appears to be. Here is an image generated at https://jsfiddle.net/gjkdc8hL/:<br />
+As far as I can tell, this is the correct solution. Here is an image generated at https://jsfiddle.net/gjkdc8hL/:<br />
 The red dots are the inputs and the green circle is given by the output. <br />
 
 https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
