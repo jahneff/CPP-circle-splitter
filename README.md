@@ -26,8 +26,7 @@ Output:  <br />
 
 As far as I can tell, this is the correct solution. Here is an image generated at https://jsfiddle.net/gjkdc8hL/:<br />
 The red dots are the inputs and the green circle is given by the output. <br />
-
-https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
+Image: https://github.com/jahneff/circle_splitter/blob/master/img/bounding_circle.PNG
 <br />
 There are 6 dots on the inside and 6 dots outside the circle (the edge counts as inside). It appears by inspection to be the smallest possible circle to be able to enclose 6 of the points.   
 
